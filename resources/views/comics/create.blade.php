@@ -5,7 +5,7 @@
 @endsection
 
 @section('main')
-    <form>
+    <form method="POST" action="{{ route('comics.store') }}">
         <div>
             <label for="title">Title:</label>
             <input type="text" name="title">
