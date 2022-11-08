@@ -6,6 +6,7 @@
 
 @section('main')
     <form method="POST" action="{{ route('comics.store') }}">
+        @csrf
         <div>
             <label for="title">Title:</label>
             <input type="text" name="title">
@@ -34,6 +35,8 @@
             <label for="type">Type:</label>
             <input type="text" name="type">
         </div>
-
+        <div>
+            <input type="submit" value="Send">
+        </div>
     </form>
 @endsection
