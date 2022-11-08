@@ -5,13 +5,16 @@
 @endsection
 
 @section('main')
-    {{-- @dump($comics) --}}
+    <div class="container">
 
-    @foreach ($comics as $comic)
-        <div class="container">
-            <a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a>
+
+        <div class="list-container">
+
+            @foreach ($comics as $comic)
+                <div>
+                    <a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a>
+                </div>
+            @endforeach
         </div>
-    @endforeach
+    </div>
 @endsection
-
-</html>

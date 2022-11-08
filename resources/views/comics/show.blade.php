@@ -1,19 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts._main')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Dettaglio {{ $comic->title }}</title>
-</head>
+{{-- @section('title')
+    {{ $comic->title }}
+@endsection --}}
 
-<body>
-    <h1>{{ $comic->title }}</h1>
-    <div>
-        <img src="{{ $comic->thumb }}" alt="{{ $comic->title }} cover">
+{{-- <title>Dettaglio {{ $comic->title }}</title> --}}
+
+
+@section('main')
+    <div class="container">
+        <div class="card-container">
+            <h1>{{ $comic->title }}</h1>
+            <div class="image-container">
+                <img src="{{ $comic->thumb }}" alt="{{ $comic->title }} cover">
+            </div>
+            <p>{{ $comic->description }}</p>
+        </div>
     </div>
-    <p>{{ $comic->description }}</p>
-</body>
-
-</html>
+@endsection
