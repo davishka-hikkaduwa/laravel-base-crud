@@ -8,7 +8,7 @@
     {{-- @dump($comics) --}}
 
     @foreach ($comics as $comic)
-        <div>
+        <div class="container">
             <a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a>
         </div>
     @endforeach
