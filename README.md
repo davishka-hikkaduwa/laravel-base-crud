@@ -24,3 +24,7 @@ php artisan make:seeder ComicSeeder
 
 
 php artisan make:model Comic -m -r -s
+
+
+
+php artisan db:seed --class=NomeSeeder
