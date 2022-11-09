@@ -16,5 +16,11 @@
             </div>
             <p>{{ $comic->description }}</p>
         </div>
+        <div>
+            <a href="{{ route('comics.edit', $comic->id) }}">Edit</a>
+        </div>
+        <div>
+            <a href="{{ route('comics.index') }}">Back</a>
+        </div>
     </div>
 @endsection
