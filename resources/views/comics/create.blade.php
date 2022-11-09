@@ -30,7 +30,7 @@
             </div>
             <div class="row">
                 <label for="sale_date">Sale date:</label>
-                <input class="input" type="text" name="sale_date">
+                <input class="input" type="date" name="sale_date">
             </div>
             <div class="row">
                 <label for="type">Type:</label>
