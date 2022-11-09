@@ -1,8 +1,8 @@
 @extends('layouts._main')
 
-@section('title')
+{{-- @section('title')
     New Comic
-@endsection
+@endsection --}}
 
 @section('main')
     <div class="container">

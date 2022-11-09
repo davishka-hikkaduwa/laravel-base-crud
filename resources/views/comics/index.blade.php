@@ -1,8 +1,8 @@
 @extends('layouts._main')
 
-@section('title')
+{{-- @section('title')
     Comics List
-@endsection
+@endsection --}}
 
 @section('main')
     <div>
@@ -13,11 +13,12 @@
             @foreach ($comics as $comic)
                 <div>
                     <a href="{{ route('comics.show', $comic->id) }}">{{ $comic->title }}</a>
-                    <form method="POST" action="{{ route('comics.destroy', $comic->id) }}">
-                        @csrf
-                        @method('DELETE')
-                        <input class="delete-btn" type="submit" value="Delete">
-                    </form>
+                    <a href="{{ route('comics.confirm-delete', $comic->id) }}">Delete</a>
+                    {{-- <form method="POST" action="{{ route('comics.destroy', $comic->id) }}"> --}}
+                    @csrf
+                    @method('DELETE')
+                    {{-- <input class="delete-btn" type="submit" value="Delete">
+                    </form> --}}
                 </div>
             @endforeach
         </div>
