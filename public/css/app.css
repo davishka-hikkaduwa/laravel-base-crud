@@ -45,3 +45,20 @@ body {
   padding: 20px 100px;
 }
 
+.container {
+  display: flex;
+  padding: 20px;
+  background-color: grey;
+}
+
+.container .row {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 5px;
+  justify-content: flex-end;
+}
+
+.container .row .input {
+  margin-left: 10px;
+}
+
